@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.204,D:\Embarcadero\Studio\Projects12\hansa1\Unit1.pas=D:\Embarcadero\Studio\Projects12\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.204,D:\Embarcadero\Studio\Projects12\hansa1\Unit1.dfm=D:\Embarcadero\Studio\Projects12\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.683,D:\Embarcadero\Studio\Projects12\hansa1\eab.dproj=D:\Embarcadero\Studio\Projects12\hansa1\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.180,=D:\Embarcadero\Studio\Projects12\hansa1\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.216,D:\Embarcadero\Studio\Projects12\hansa1\Project1.dproj=D:\Embarcadero\Studio\Projects12\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.471,D:\Embarcadero\Studio\Projects12\hansa1\DZhTypes.pas=D:\Embarcadero\Studio\Projects12\hansa1\CommonTypes.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.730,D:\Embarcadero\Studio\Projects12\hansa1\DZhValidator.pas=D:\Embarcadero\Studio\Projects12\hansa1\Validator.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.343,=D:\Embarcadero\Studio\Projects12\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.296,=D:\Embarcadero\Studio\Projects12\hansa1\Unit3.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.227,D:\Embarcadero\Studio\Projects12\hansa1\Unit3.pas=D:\Embarcadero\Studio\Projects12\hansa1\Validator.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.977,D:\Embarcadero\Studio\Projects12\hansa1\CommonTypes.pas=D:\Embarcadero\Studio\Projects12\hansa1\Unit3.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.541,D:\Embarcadero\Studio\Projects12\hansa1\Unit3.pas=D:\Embarcadero\Studio\Projects12\hansa1\PhoneNumbers.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.383,=D:\Embarcadero\Studio\Projects12\hansa1\Unit3.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.128,=D:\Embarcadero\Studio\Projects12\hansa1\Unit3.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.490,=D:\Embarcadero\Studio\Projects12\hansa1\Unit3.pas</Transaction>
+  </Transactions>
+</BorlandProject>
