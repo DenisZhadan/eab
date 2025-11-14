@@ -6,8 +6,6 @@ uses
   SysUtils, System.Character, PhoneNumbers;
 
 type
-  TIntArray = array of Integer;
-  TBooleanArray = array of Boolean;
 
   TValidator = class
   private
@@ -43,8 +41,8 @@ implementation
 function TValidator.CalculateChecksum(const PersonalCode: string): Integer;
 var
   i, sum, checksum: Integer;
-  weights: TIntArray;
-  weights2: TIntArray;
+  weights: TArray<Integer>;
+  weights2: TArray<Integer>;
 begin
   weights := [1, 2, 3, 4, 5, 6, 7, 8, 9, 1];
   weights2 := [3, 4, 5, 6, 7, 8, 9, 1, 2, 3];
@@ -73,7 +71,7 @@ end;
 function TValidator.PersonalCode(const PersonalCode: string; out ErrorMessage: string): Boolean;
 var
   i, century, year, month, day: Integer;
-  daysInMonth: TIntArray;
+  daysInMonth: TArray<Integer>;
 begin
   Result := True;
   if PersonalCode = '' then
@@ -83,20 +81,20 @@ begin
   for i := 1 to Length(PersonalCode) do
     if not TCharacter.IsDigit(PersonalCode[i]) then
     begin
-      ErrorMessage := 'Personal code must contain only digits.';
+      ErrorMessage := 'Must contain only digits.';
       Exit(False);
     end;
 
   // Check if the length is 11 digits
   if Length(PersonalCode) <> 11 then
   begin
-    ErrorMessage := 'Personal code must be 11 digits long.';
+    ErrorMessage := 'Must be 11 digits long.';
     Exit(False);
   end;
 
   if not(PersonalCode[1] in ['1', '2', '3', '4', '5', '6']) then
   begin
-    ErrorMessage := 'Invalid first digit in personal code.';
+    ErrorMessage := 'Invalid first digit.';
     Exit(False);
   end;
 
@@ -117,7 +115,7 @@ begin
 
   if (month < 1) or (month > 12) then
   begin
-    ErrorMessage := 'Invalid month in personal code.';
+    ErrorMessage := 'Incorrect values in positions 4 or 5 (or both).';
     Exit(False);
   end;
 
@@ -128,14 +126,14 @@ begin
 
   if (day < 1) or (day > daysInMonth[month - 1]) then
   begin
-    ErrorMessage := 'Invalid day in personal code.';
+    ErrorMessage := 'Incorrect values in positions 6 or 7 (or both).';
     Exit(False);
   end;
 
   Result := CalculateChecksum(PersonalCode) = StrToInt(PersonalCode[11]);
 
   if not Result then
-    ErrorMessage := 'Invalid checksum in personal code.';
+    ErrorMessage := 'Invalid checksum.';
 end;
 
 function TValidator.PostalCode(const PostalCode: string; out ErrorMessage: string): Boolean;

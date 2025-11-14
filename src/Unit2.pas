@@ -80,7 +80,7 @@ type
     procedure edtSettlementUnitChange(Sender: TObject);
   private
     FValidator: TValidator;
-    FValidFields: TBooleanArray;
+    FValidFields: TArray<Boolean>;
     procedure InitEditField(EditField: TEdit; const NewValue: string);
     { Private declarations }
   public
